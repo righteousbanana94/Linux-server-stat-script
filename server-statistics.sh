@@ -5,17 +5,17 @@ echo "-----------------------------------"
 
 # CPU Usage
 echo "CPU Usage:"
-ps -eo %cpu,%mem,cmd --sort=-%cpu | head -n 6
+ps -eo %cpu,%mem,cmd --sort=-%cpu | head -n 5
 echo "-----------------------------------"
 
 # Memory Usage
 echo "Memory Usage:"
-free -h
+free -h | head -n 5
 echo "-----------------------------------"
 
 # Disk Usage
 echo "Disk Usage:"
-df -h
+df -h 
 echo "-----------------------------------"
 
 # Network Statistics
